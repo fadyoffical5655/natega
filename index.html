@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتيجة الثانوية العامة 2025 | وزارة التربية والتعليم</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="spinner"></div>
+            <p>جاري تحميل النتائج...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="gov-bar">
+            <div class="container">
+                <span><i class="fas fa-university"></i> وزارة التربية والتعليم</span>
+                <span id="date"></span>
+            </div>
+        </div>
+        <div class="logo-bar">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-school"></i></div>
+                    <div>
+                        <h1>نتيجة الثانوية العامة</h1>
+                        <p>العام الدراسي 2024 - 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container" data-aos="fade-up">
+            <span class="badge">2025</span>
+            <h2>الاستعلام عن النتيجة</h2>
+            <p>برقم الجلوس أو الاسم</p>
+        </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search" id="search">
+        <div class="container">
+            <div class="tabs" data-aos="fade-up">
+                <button class="tab active" onclick="switchTab('seat')">
+                    <i class="fas fa-hashtag"></i> رقم الجلوس
+                </button>
+                <button class="tab" onclick="switchTab('name')">
+                    <i class="fas fa-user"></i> الاسم
+                </button>
+            </div>
+
+            <div class="panel active" id="seatPanel">
+                <form id="seatForm" data-aos="zoom-in">
+                    <div class="input-wrap">
+                        <i class="fas fa-hashtag"></i>
+                        <input type="text" id="seatInput" placeholder="أدخل رقم الجلوس" autocomplete="off">
+                        <button type="submit">عرض النتيجة</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="panel" id="namePanel">
+                <form id="nameForm" data-aos="zoom-in">
+                    <div class="input-wrap">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="nameInput" placeholder="أدخل اسم الطالب" autocomplete="off">
+                        <button type="submit">بحث</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="results" id="resultsSection" style="display:none;">
+        <div class="container" id="resultsContainer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 جميع الحقوق محفوظة - وزارة التربية والتعليم المصرية</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
